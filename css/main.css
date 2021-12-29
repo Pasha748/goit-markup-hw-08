@@ -276,9 +276,9 @@ body {
 }
 
 .hero-section {
+  margin: 0 auto;
   max-width: 1600px;
   text-align: center;
-  align-content: center;
   background-color: var(--second-background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -621,8 +621,15 @@ body {
 
 .clients {
   background-color: var(--main-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-title {
@@ -637,15 +644,28 @@ body {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .clients-list__item {
-  width: 170px;
-  height: 92px;
+  width: calc(100% / 2 - 30px);
+  height: 90px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: calc(100% / 6 - 30px);
+  }
 }
 
 .clients-list__link {
@@ -666,6 +686,32 @@ body {
 .clients-list__link:hover, .clients-list__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+.clients-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-container {
+    max-width: 1200px;
+  }
 }
 
 .footer {
