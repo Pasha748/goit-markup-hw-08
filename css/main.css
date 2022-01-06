@@ -1180,16 +1180,45 @@ body {
 }
 
 .filter-list {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-section__list {
-  justify-content: center;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-section__list {
+    justify-content: center;
+  }
 }
 
 .filter-section__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter-section__item {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-section__item {
+    margin-bottom: 0;
+  }
 }
 
 .filter-section__button {

@@ -7,15 +7,33 @@
   }
 }
 .filter-list {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
 }
 .filter-section__list {
-  justify-content: center;
   display: flex;
-}
+  flex-direction:row;
+    flex-wrap:wrap;
+    @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  }
 .filter-section__item:not(:last-child) {
   margin-right: 8px;
 }
+.filter-section__item{
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px){
+    margin-bottom: 0;
+  }
+}
+
 .filter-section__button {
   border: none;
   font-family: inherit;
@@ -76,8 +94,8 @@
 }
 .port-products__item {
   margin-bottom: 30px;
-    transition-property: box-shadow;
-    transition: 250ms;
+  transition-property: box-shadow;
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
