@@ -22,7 +22,7 @@
 
     <!-- Хедер -->
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
                 <a href="./index.html" class="logo link">
@@ -54,10 +54,52 @@
                             </use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="open-menu-btn">
+                <svg class="header-menu__svg" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu">
+            </button>
         </div>
 
+        <div class="mob-menu is-hidden">
+            <div class="mob-menu__container">
+                <div class="mob-menu__first">
+                    <button class="close-menu-btn">
+                        <svg class="close-menu-icon" width="19" height="19">
+                            <use href="./images/icons.svg#icon-close-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu__list list">
+                        <li class="mob-menu__item "><a class="mob-menu__link link" href="./index.html">Студия</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu__second">
+                    <ul class="mob-menu__contacts list">
+                        <li class="mob-menu__item-tel">
+                            <a class="mob-menu__tel link " href="">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu__item-mail">
+                            <a class="mob-menu__mail link " href="">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-menu__social-list list">
+                        <li class="mob-menu__social-item"> <a class="mob-menu__social-link link" href="">Instagram</a>
+                        </li>
+                        <li class="mob-menu__social-item"> <a class="mob-menu__social-link link" href="">Twitter</a>
+                        </li>
+                        <li class="mob-menu__social-item"> <a class="mob-menu__social-link link" href="">Facebook</a>
+                        </li>
+                        <li class="mob-menu__social-item"> <a class="mob-menu__social-link link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-    </header> -->
+    </header>
 
     <!-- Герой -->
 
@@ -594,12 +636,8 @@
         </div>
     </div>
 
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
