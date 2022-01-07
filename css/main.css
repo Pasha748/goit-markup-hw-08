@@ -174,13 +174,31 @@ body {
 }
 
 .header-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   height: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .header-container {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
+    max-width: 768px;
     height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1200px;
   }
 }
 
@@ -327,9 +345,12 @@ body {
 }
 
 .open-menu-btn {
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   width: 40px;
   height: 40px;
-  margin-right: 10px;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
@@ -409,7 +430,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-section__title {
-    font-style: 44px;
+    font-size: 44px;
     line-height: 1.36;
   }
 }
@@ -620,17 +641,31 @@ body {
 }
 
 .team-section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-tittle-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-tittle-color);
+    margin-bottom: 50px;
+  }
 }
 
 .team-section__list {
   justify-content: center;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -732,13 +767,26 @@ body {
 }
 
 .clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-tittle-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-tittle-color);
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
@@ -869,6 +917,7 @@ body {
 .footer-contacts__mail,
 .footer-contacts__tel {
   display: block;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 1200px) {
