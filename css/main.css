@@ -215,7 +215,13 @@ body {
 
 .logo__header {
   color: #000000;
-  margin-right: 93px;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__header {
+    margin-right: 93px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -295,8 +301,8 @@ body {
 .header-contacts__mail {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
   align-items: center;
@@ -319,14 +325,16 @@ body {
   .header-contacts__mail {
     margin-bottom: 0;
     margin-right: 30px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .header-contacts__tel {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
   align-items: center;
@@ -337,6 +345,13 @@ body {
 
 .header-contacts__tel:hover, .header-contacts__tel:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .header-contacts__svg {
