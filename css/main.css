@@ -1131,6 +1131,7 @@ body {
   transition-property: opacity;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .backdrop.is-hidden {
@@ -1599,6 +1600,7 @@ body {
   height: 100vh;
   z-index: 5;
   padding-bottom: 48px;
+  overflow: auto;
 }
 
 .mob-menu.is-hidden {
